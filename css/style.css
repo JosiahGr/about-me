@@ -1,7 +1,8 @@
 h1 {
-    color: blanchedalmond;
+    color: rgba(0, 0, 0, 0.486);
     font-size: 60px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.719)
 }
 
 h2 {
@@ -9,6 +10,7 @@ h2 {
     font-size: 40px;
     text-indent: 20px;
     padding: 35px;
+    text-decoration-line: underline;
 }
 
 body {
@@ -21,3 +23,4 @@ p {
     text-indent: 80px;
     color: white;
 }
+
