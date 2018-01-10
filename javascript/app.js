@@ -3,8 +3,9 @@
 alert ('Hello and welcome.');
 
 var userName = prompt ('What\'s your name?');
-alert('Hello, ' + userName + '.');
+alert('Thanks for stopping by ' + userName + '. I have some questions for you to answer since you\'re here.');
 console.log('The users name is: ' + userName);
+
 
 // // Question 1
 
