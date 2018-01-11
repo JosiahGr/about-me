@@ -86,24 +86,24 @@ console.log("User guessed how many siblings in " + attempts + " attempts.");
 
 // Question 7
 
-var attempts = 0;
+// var attempts = 0;
 
-while (attempts < 6) {
-  var homeState = ["colorado", "california", "alaska"]; 
-  var answer2 = prompt("Can you guess a state that I have lived in?").toLowerCase();
+// while (attempts < 6) {
+//   var homeState = ["colorado", "california", "alaska"]; 
+//   var answer2 = prompt("Can you guess a state that I have lived in?").toLowerCase();
   
-for(var i=0; i < homeState.length; i++) {
-  if (answer2 === homeState[i]) {
-    alert("That is correct! I love " + homeState[i]);
-    break;
-  } else if (answer2 !== homeState[i]) {
-    attempts++;
-  } if (attempts === 6) {
-    alert ("You are out of tries. I\'ve lived in California, Colorado and Alaska.")
-  }
-}}
+// for(var i=0; i < homeState.length; i++) {
+//   if (answer2 === homeState[i]) {
+//     alert("That is correct! I love " + homeState[i]);
+//     break;
+//   } else if (answer2 !== homeState[i]) {
+//     attempts++;
+//   } if (attempts === 6) {
+//     alert ("You are out of tries. I\'ve lived in California, Colorado and Alaska.")
+//   }
+// }}
 
-console.log('State guessed: ' + answer2);
+// console.log('State guessed: ' + answer2);
 
 
 alert ('Thanks ' + userName + ' for your time! See you soon.');
