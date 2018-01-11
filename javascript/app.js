@@ -1,11 +1,9 @@
 'use strict';
 
-function greeting() {
-  alert ('Hello and welcome.');
-  var userName = prompt ('What\'s your name?');
-  alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
-  console.log('The users name is: ' + userName);
-}
+alert ('Hello and welcome.');
+var userName = prompt ('What\'s your name?');
+alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
+console.log('The users name is: ' + userName);
 
 // // Question 1
 function question1() {
@@ -86,6 +84,7 @@ function question6() {
   }
   if (attempts === 0) {
     alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
+    console.log('User ran out of attempts.');
   }
   console.log('User guessed how many siblings in ' + attempts + ' attempts.');
 }
@@ -106,6 +105,7 @@ function question7() {
       if(answer2 === homeState[i]) {
         alert('That is correct! I love ' + homeState[i]);
         success = true;
+        console.log('User guessed ' + homeState[i] + ' with ' + counter + 'attempt(s) left');
         break;
       }
     } if (success === true) {
@@ -113,12 +113,11 @@ function question7() {
     } else {
       counter = 5 - attempt2;
       alert('You have ' + counter + ' chance(s) left.');
-      console.log('You have ' + counter + ' chance(s) left.');
+      console.log('User guessed incorrectly with ' + counter + ' attempts left');
     }
   }
 }
 
-greeting();
 question1();
 question2();
 question3();
