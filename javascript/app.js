@@ -7,7 +7,7 @@ var userName = prompt ('What\'s your name?');
 alert('Thanks for stopping by ' + userName + '. let\s play a game!');
 console.log('The users name is: ' + userName);
 
-// // Question 1
+// Question 1
 
 var myAge = prompt ('Do you think I\'m older than 25? Answer with Y or N.').toUpperCase();
 
@@ -18,7 +18,7 @@ if(myAge === 'Y' || myAge === 'YES') {
 }
 console.log('Q1 The user guessed: ' + myAge);
 
-// // Question 2
+// Question 2
 
 var seattleNative = prompt ('Do you think i\m a Seattle native? Answer Y or N').toUpperCase();
 
@@ -65,5 +65,45 @@ if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
 }
 
 console.log('Q5 The user guessed: ' + howAmIDoing);
+
+// Question 6
+
+alert ('You only have 3 guesses on this next one. Be careful!')
+
+var attempts = 3;
+while (attempts > 0) {
+  var answer = prompt("How many Siblings do I have?");
+  if (answer === "5") {
+    alert ("YEAH! You got it right! I have 3 sisters and 2 brothers.");
+    break;
+  }
+  attempts--;
+}
+if (attempts === 0) {
+  alert("Out of Tries! I actually have five siblings. Three sisters and two brothers.");
+}
+console.log("User guessed how many siblings in " + attempts + " attempts.");
+
+// Question 7
+
+var attempts = 0;
+
+while (attempts < 6) {
+  var homeState = ["colorado", "california", "alaska"]; 
+  var answer2 = prompt("Can you guess a state that I have lived in?").toLowerCase();
+  
+for(var i=0; i < homeState.length; i++) {
+  if (answer2 === homeState[i]) {
+    alert("That is correct! I love " + homeState[i]);
+    break;
+  } else if (answer2 !== homeState[i]) {
+    attempts++;
+  } if (attempts === 6) {
+    alert ("You are out of tries. I\'ve lived in California, Colorado and Alaska.")
+  }
+}}
+
+console.log('State guessed: ' + answer2);
+
 
 alert ('Thanks ' + userName + ' for your time! See you soon.');
