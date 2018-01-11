@@ -44,76 +44,85 @@ function question3() {
 }
 
 // // Question 4
+function question4(){
+  var inanimateObject = prompt ('If I could eliminate one inanimate object from existence, what would I choose? Type 1 for Selfie Sticks or 2 for Blue Cheese.').toUpperCase();
 
-var inanimateObject = prompt ('If I could eliminate one inanimate object from existence, what would I choose? Type 1 for Selfie Sticks or 2 for Blue Cheese.').toUpperCase();
+  if(inanimateObject === '1' || inanimateObject === 'ONE') {
+    alert ('YES! They are so ridiculous looking.');
+  } else {
+    alert ('Wrong. While I think Blue Cheese is horrible, I can keep my distance. I truly wish selfie sticks weren\'t an actual thing.');
+  }
 
-if(inanimateObject === '1' || inanimateObject === 'ONE') {
-  alert ('YES! They are so ridiculous looking.');
-} else {
-  alert ('Wrong. While I think Blue Cheese is horrible, I can keep my distance. I truly wish selfie sticks weren\'t an actual thing.');
+  console.log('Q4 The user guessed: ' + inanimateObject);
 }
-
-console.log('Q4 The user guessed: ' + inanimateObject);
 
 // // Question 5
+function question5() {
+  alert ('We are just about done. One Last question.');
 
-alert ('We are just about done. One Last question.');
+  var howAmIDoing = prompt ('Am I bad at coming up with yes or no questions? Answer Y or N.').toUpperCase();
 
-var howAmIDoing = prompt ('Am I bad at coming up with yes or no questions? Answer Y or N.').toUpperCase();
+  if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
+    alert ('Right? It took me way too long to come up with anything (including this copout last question).');
+  } else {
+    alert ('Hey, thanks! You\'re too kind. Your compliment is going right up on my fridge.');
+  }
 
-if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
-  alert ('Right? It took me way too long to come up with anything (including this copout last question).');
-} else {
-  alert ('Hey, thanks! You\'re too kind. Your compliment is going right up on my fridge.');
+  console.log('Q5 The user guessed: ' + howAmIDoing);
 }
-
-console.log('Q5 The user guessed: ' + howAmIDoing);
 
 // // Question 6
+function question6() {
+  alert ('You only have 3 guesses on this next one. Be careful!');
 
-alert ('You only have 3 guesses on this next one. Be careful!');
-
-var attempts = 3;
-while (attempts > 0) {
-  var answer = prompt('How many Siblings do I have?');
-  if (answer === '5') {
-    alert ('YEAH! You got it right! I have 3 sisters and 2 brothers.');
-    break;
-  }
-  attempts--;
-}
-if (attempts === 0) {
-  alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
-}
-console.log('User guessed how many siblings in ' + attempts + ' attempts.');
-
-//Question 7
-
-var attempt2;
-var success = false;
-var counter;
-var i;
-
-for(attempt2 = 0; attempt2 < 6; attempt2++) {
-  var homeState = ['colorado', 'california', 'alaska'];
-  var answer2 = prompt('Can you guess a state that I have lived in?').toLowerCase();
-
-  for(i = 0; i < homeState.length; i++) {
-    if(answer2 === homeState[i]) {
-      alert('That is correct! I love ' + homeState[i]);
-      success = true;
+  var attempts = 3;
+  while (attempts > 0) {
+    var answer = prompt('How many Siblings do I have?');
+    if (answer === '5') {
+      alert ('YEAH! You got it right! I have 3 sisters and 2 brothers.');
       break;
     }
-  } if (success === true) {
-    break;
-  } else {
-    counter = 5 - attempt2;
-    alert('You have ' + counter + ' chance(s) left.');
-    console.log('You have ' + counter + ' chance(s) left.');
+    attempts--;
+  }
+  if (attempts === 0) {
+    alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
+  }
+  console.log('User guessed how many siblings in ' + attempts + ' attempts.');
+}
+
+//Question 7
+function question7() {
+  var attempt2;
+  var success = false;
+  var counter;
+  var i;
+
+  for(attempt2 = 0; attempt2 < 6; attempt2++) {
+    var homeState = ['colorado', 'california', 'alaska'];
+    var answer2 = prompt('Can you guess a state that I have lived in?').toLowerCase();
+
+    for(i = 0; i < homeState.length; i++) {
+      if(answer2 === homeState[i]) {
+        alert('That is correct! I love ' + homeState[i]);
+        success = true;
+        break;
+      }
+    } if (success === true) {
+      break;
+    } else {
+      counter = 5 - attempt2;
+      alert('You have ' + counter + ' chance(s) left.');
+      console.log('You have ' + counter + ' chance(s) left.');
+    }
   }
 }
-// alert ('Thanks ' + userName + ' for your time! See you soon.');
+alert ('Thanks ' + userName + ' for your time! See you soon.');
+
 
 question1();
 question2();
 question3();
+question4();
+question5();
+question6();
+question7();
