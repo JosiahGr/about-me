@@ -1,11 +1,11 @@
 'use strict';
 
-alert ('Hello and welcome.');
-
-var userName = prompt ('What\'s your name?');
-
-alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
-console.log('The users name is: ' + userName);
+function greeting() {
+  alert ('Hello and welcome.');
+  var userName = prompt ('What\'s your name?');
+  alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
+  console.log('The users name is: ' + userName);
+}
 
 // // Question 1
 function question1() {
@@ -91,6 +91,7 @@ function question6() {
 }
 
 //Question 7
+
 function question7() {
   var attempt2;
   var success = false;
@@ -116,9 +117,8 @@ function question7() {
     }
   }
 }
-alert ('Thanks ' + userName + ' for your time! See you soon.');
 
-
+greeting();
 question1();
 question2();
 question3();
@@ -126,3 +126,5 @@ question4();
 question5();
 question6();
 question7();
+
+alert ('Thanks ' + userName + ' for your time! See you soon.');
