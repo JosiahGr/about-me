@@ -1,90 +1,93 @@
 'use strict';
 
-// alert ('Hello and welcome.');
+alert ('Hello and welcome.');
 
-// var userName = prompt ('What\'s your name?');
+var userName = prompt ('What\'s your name?');
 
-// alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
-// console.log('The users name is: ' + userName);
+alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
+console.log('The users name is: ' + userName);
 
-// // // Question 1
+// // Question 1
+function question1() {
+  var myAge = prompt ('Do you think I\'m older than 25? Answer with Y or N.').toUpperCase();
 
-// var myAge = prompt ('Do you think I\'m older than 25? Answer with Y or N.').toUpperCase();
+  if(myAge === 'Y' || myAge === 'YES') {
+    alert('Yeah! You got it!');
+  } else {
+    alert('Nope. You\'re wrong. But that\'s okay!');
+  }
+  console.log('Q1 The user guessed: ' + myAge);
+}
 
-// if(myAge === 'Y' || myAge === 'YES') {
-//   alert('Yeah! You got it!');
-// } else {
-//   alert('Nope. You\'re wrong. But that\'s okay!');
-// }
-// console.log('Q1 The user guessed: ' + myAge);
+// // Question 2
+function question2() {
+  var seattleNative = prompt ('Do you think I\'m a Seattle native? Answer Y or N').toUpperCase();
 
-// // // Question 2
+  if (seattleNative === 'N' || seattleNative === 'NO') {
+    alert ('You\'re right! I\'m actually from Denver, Colorado');
+  } else {
+    alert ('Nope. I\'m actually from Denver, Colorado.');
+  }
+  console.log('Q2 The user guessed: ' + seattleNative);
+}
 
-// var seattleNative = prompt ('Do you think I\'m a Seattle native? Answer Y or N').toUpperCase();
+// // Question 3
+function question3() {
+  var cheese = prompt ('Do you think I like cheese? Answer Y or N.').toUpperCase();
 
-// if (seattleNative === 'N' || seattleNative === 'NO') {
-//   alert ('You\'re right! I\'m actually from Denver, Colorado');
-// } else {
-//   alert ('Nope. I\'m actually from Denver, Colorado.');
-// }
-// console.log('Q2 The user guessed: ' + seattleNative);
+  if(cheese === 'Y' || cheese === 'YES') {
+    alert ('NO! I hate cheese. I really don\'t understand why its a thing.');
+  } else {
+    alert ('CORRECT! It\'s pretty nasty. I don\'t understand why it\'s a thing.');
+  }
+  console.log('Q3 The user guessed: ' + cheese);
+}
 
-// // // Question 3
+// // Question 4
 
-// var cheese = prompt ('Do you think I like cheese? Answer Y or N.').toUpperCase();
+var inanimateObject = prompt ('If I could eliminate one inanimate object from existence, what would I choose? Type 1 for Selfie Sticks or 2 for Blue Cheese.').toUpperCase();
 
-// if(cheese === 'Y' || cheese === 'YES') {
-//   alert ('NO! I hate cheese. I really don\'t understand why its a thing.');
-// } else {
-//   alert ('CORRECT! It\'s pretty nasty. I don\'t understand why it\'s a thing.');
-// }
-// console.log('Q3 The user guessed: ' + cheese);
+if(inanimateObject === '1' || inanimateObject === 'ONE') {
+  alert ('YES! They are so ridiculous looking.');
+} else {
+  alert ('Wrong. While I think Blue Cheese is horrible, I can keep my distance. I truly wish selfie sticks weren\'t an actual thing.');
+}
 
-// // // Question 4
+console.log('Q4 The user guessed: ' + inanimateObject);
 
-// var inanimateObject = prompt ('If I could eliminate one inanimate object from existence, what would I choose? Type 1 for Selfie Sticks or 2 for Blue Cheese.').toUpperCase();
+// // Question 5
 
-// if(inanimateObject === '1' || inanimateObject === 'ONE') {
-//   alert ('YES! They are so ridiculous looking.');
-// } else {
-//   alert ('Wrong. While I think Blue Cheese is horrible, I can keep my distance. I truly wish selfie sticks weren\'t an actual thing.');
-// }
+alert ('We are just about done. One Last question.');
 
-// console.log('Q4 The user guessed: ' + inanimateObject);
+var howAmIDoing = prompt ('Am I bad at coming up with yes or no questions? Answer Y or N.').toUpperCase();
 
-// // // Question 5
+if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
+  alert ('Right? It took me way too long to come up with anything (including this copout last question).');
+} else {
+  alert ('Hey, thanks! You\'re too kind. Your compliment is going right up on my fridge.');
+}
 
-// alert ('We are just about done. One Last question.');
+console.log('Q5 The user guessed: ' + howAmIDoing);
 
-// var howAmIDoing = prompt ('Am I bad at coming up with yes or no questions? Answer Y or N.').toUpperCase();
+// // Question 6
 
-// if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
-//   alert ('Right? It took me way too long to come up with anything (including this copout last question).');
-// } else {
-//   alert ('Hey, thanks! You\'re too kind. Your compliment is going right up on my fridge.');
-// }
+alert ('You only have 3 guesses on this next one. Be careful!');
 
-// console.log('Q5 The user guessed: ' + howAmIDoing);
+var attempts = 3;
+while (attempts > 0) {
+  var answer = prompt('How many Siblings do I have?');
+  if (answer === '5') {
+    alert ('YEAH! You got it right! I have 3 sisters and 2 brothers.');
+    break;
+  }
+  attempts--;
+}
+if (attempts === 0) {
+  alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
+}
+console.log('User guessed how many siblings in ' + attempts + ' attempts.');
 
-// // // Question 6
-
-// alert ('You only have 3 guesses on this next one. Be careful!');
-
-// var attempts = 3;
-// while (attempts > 0) {
-//   var answer = prompt('How many Siblings do I have?');
-//   if (answer === '5') {
-//     alert ('YEAH! You got it right! I have 3 sisters and 2 brothers.');
-//     break;
-//   }
-//   attempts--;
-// }
-// if (attempts === 0) {
-//   alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
-// }
-// console.log('User guessed how many siblings in ' + attempts + ' attempts.');
-
-// Question 7
+//Question 7
 
 var attempt2;
 var success = false;
@@ -110,3 +113,7 @@ for(attempt2 = 0; attempt2 < 6; attempt2++) {
   }
 }
 // alert ('Thanks ' + userName + ' for your time! See you soon.');
+
+question1();
+question2();
+question3();
