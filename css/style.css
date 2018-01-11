@@ -1,7 +1,10 @@
 h1 {
     color: rgba(0, 0, 0, 0.486);
-    font-size: 60px;
+    font-size: 40px;
+    text-decoration: underline;
     text-align: center;
+    border: solid;
+    padding: 35px;
     background-color: rgba(255, 255, 255, 0.719)
 }
 
@@ -13,14 +16,44 @@ h2 {
     text-decoration-line: underline;
 }
 
-body {
-    background-color: rgba(0, 0, 48, 0.486);
-    font-family: Arial, Helvetica, sans-serif
+h3 {
+  font-size: 30px;
+  color: white;
 }
 
+h5 {
+  font-size: 20px;
+  color: #222;
+}
+
+body {
+    background-color: #777;
+    font-family: Arial, Helvetica, sans-serif
+}
+#intro {
+  font-size: 20px;
+  color: #333;
+  text-align: Center
+}
 p {
     font-size: 20px;
-    text-indent: 80px;
+    text-indent: 40px;
     color: white;
+}
+
+ol {
+  font-size: 20px;
+  font-color: Yellow;
+}
+
+ul {
+  color: Yellow;
+  list-style-type: none;
+}
+
+.Questions {
+  color: black;
+  font-size: 20px;
+  padding: 10px 0px;
 }
 
