@@ -5,10 +5,8 @@ var userName = prompt ('What\'s your name?');
 alert('Thanks for stopping by ' + userName + '. let\'s play a game!');
 console.log('The users name is: ' + userName);
 
-// // Question 1
 function question1() {
   var myAge = prompt ('Do you think I\'m older than 25? Answer with Y or N.').toUpperCase();
-
   if(myAge === 'Y' || myAge === 'YES') {
     alert('Yeah! You got it!');
   } else {
@@ -17,10 +15,8 @@ function question1() {
   console.log('Q1 The user guessed: ' + myAge);
 }
 
-// // Question 2
 function question2() {
   var seattleNative = prompt ('Do you think I\'m a Seattle native? Answer Y or N').toUpperCase();
-
   if (seattleNative === 'N' || seattleNative === 'NO') {
     alert ('You\'re right! I\'m actually from Denver, Colorado');
   } else {
@@ -29,10 +25,8 @@ function question2() {
   console.log('Q2 The user guessed: ' + seattleNative);
 }
 
-// // Question 3
 function question3() {
   var cheese = prompt ('Do you think I like cheese? Answer Y or N.').toUpperCase();
-
   if(cheese === 'Y' || cheese === 'YES') {
     alert ('NO! I hate cheese. I really don\'t understand why its a thing.');
   } else {
@@ -41,38 +35,29 @@ function question3() {
   console.log('Q3 The user guessed: ' + cheese);
 }
 
-// // Question 4
 function question4(){
   var inanimateObject = prompt ('If I could eliminate one inanimate object from existence, what would I choose? Type 1 for Selfie Sticks or 2 for Blue Cheese.').toUpperCase();
-
   if(inanimateObject === '1' || inanimateObject === 'ONE') {
     alert ('YES! They are so ridiculous looking.');
   } else {
     alert ('Wrong. While I think Blue Cheese is horrible, I can keep my distance. I truly wish selfie sticks weren\'t an actual thing.');
   }
-
   console.log('Q4 The user guessed: ' + inanimateObject);
 }
 
-// // Question 5
 function question5() {
   alert ('We are just about done. One Last question.');
-
   var howAmIDoing = prompt ('Am I bad at coming up with yes or no questions? Answer Y or N.').toUpperCase();
-
   if (howAmIDoing === 'Y' || howAmIDoing === 'YES') {
     alert ('Right? It took me way too long to come up with anything (including this copout last question).');
   } else {
     alert ('Hey, thanks! You\'re too kind. Your compliment is going right up on my fridge.');
   }
-
   console.log('Q5 The user guessed: ' + howAmIDoing);
 }
 
-// // Question 6
 function question6() {
   alert ('You only have 3 guesses on this next one. Be careful!');
-
   var attempts = 3;
   while (attempts > 0) {
     var answer = prompt('How many Siblings do I have?');
@@ -81,15 +66,12 @@ function question6() {
       break;
     }
     attempts--;
-  }
-  if (attempts === 0) {
+  } if (attempts === 0) {
     alert('Out of Tries! I actually have five siblings. Three sisters and two brothers.');
     console.log('User ran out of attempts.');
   }
   console.log('User guessed how many siblings in ' + attempts + ' attempts.');
 }
-
-//Question 7
 
 function question7() {
   var attempt2;

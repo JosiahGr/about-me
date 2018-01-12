@@ -1,19 +1,19 @@
 h1 {
-    color: rgba(0, 0, 0, 0.486);
-    font-size: 40px;
-    text-decoration: underline;
-    text-align: center;
-    border: solid;
-    padding: 35px;
-    background-color: rgba(255, 255, 255, 0.719)
+  color: rgba(0, 0, 0, 0.486);
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+  border: solid;
+  padding: 35px;
+  background-color: rgba(255, 255, 255, 0.719)
 }
 
 h2 {
-    color: blanchedalmond;
-    font-size: 40px;
-    text-indent: 20px;
-    padding: 35px;
-    text-decoration-line: underline;
+  color: blanchedalmond;
+  font-size: 40px;
+  text-indent: 20px;
+  padding: 35px;
+  text-decoration-line: underline;
 }
 
 h3 {
@@ -27,18 +27,20 @@ h5 {
 }
 
 body {
-    background-color: #777;
-    font-family: Arial, Helvetica, sans-serif
+  background-color: #777;
+  font-family: Arial, Helvetica, sans-serif
 }
+
 #intro {
   font-size: 20px;
   color: #333;
   text-align: Center
 }
+
 p {
-    font-size: 20px;
-    text-indent: 40px;
-    color: white;
+  font-size: 20px;
+  text-indent: 40px;
+  color: white;
 }
 
 ol {
