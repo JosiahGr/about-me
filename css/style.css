@@ -1,11 +1,53 @@
+#container {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+#gameImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1450px;
+  height: 800px;
+}
+
+#play{
+  position: absolute;
+  z-index: 2;
+  left: 680px;
+  bottom: 30px;
+  font-size: 14px;
+  color: #684641;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#text {
+  z-index: 1;
+  position: absolute;
+  color: #cda191;
+  font-size: 70px;
+  font-weight: bold;
+  left: 340px;
+  top: 140px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#text2 {
+  position: absolute;
+  z-index: 2;
+  left: 350px;
+  top: 330px;
+  font-size: 20px;
+  color: #925048;
+  font-family: Arial, Helvetica, sans-serif
+}
+
 h1 {
   color: rgba(0, 0, 0, 0.486);
   font-size:80px;
-  text-align: center;
-  border: solid;
-  border-radius: 50px 50px;
-  padding: 290px;
-  background-color: rgba(255, 255, 255, 0.719)
+  text-align: center; 
 }
 
 h2 {
