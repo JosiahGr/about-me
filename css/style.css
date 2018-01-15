@@ -42,7 +42,7 @@ body {
 #text2 {
   position: absolute;
   z-index: 2;
-  left: 350px;
+  left: 400px;
   top: 330px;
   font-size: 20px;
   color: #925048;
@@ -79,12 +79,6 @@ h5 {
   font-size: 20px;
   color: #333;
   text-align: Center
-}
-
-p {
-  font-size: 20px;
-  text-indent: 40px;
-  color: white;
 }
 
 ol {
